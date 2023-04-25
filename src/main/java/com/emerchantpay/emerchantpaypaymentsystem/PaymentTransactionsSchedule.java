@@ -1,4 +1,4 @@
-package com.emerchantpay.emerchantpaypaymentsystem.util;
+package com.emerchantpay.emerchantpaypaymentsystem;
 
 import java.time.Instant;
 import java.util.Collections;
