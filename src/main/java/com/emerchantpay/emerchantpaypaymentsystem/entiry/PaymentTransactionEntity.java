@@ -32,7 +32,7 @@ public class PaymentTransactionEntity {
   @Enumerated(EnumType.STRING)
   private PaymentTransactionType type;
 
-  private UUID uuid;
+  private String uuid;
 
   private BigDecimal amount;
 
@@ -57,6 +57,7 @@ public class PaymentTransactionEntity {
   @UpdateTimestamp
   private Instant lastUpdateTime;
 
+  @SuppressWarnings("unused")
   public PaymentTransactionEntity() {
   }
 
@@ -70,6 +71,7 @@ public class PaymentTransactionEntity {
       PaymentTransactionEntity reference
   ) {
     this.type = type;
+    this.uuid = UUID.randomUUID().toString();
     this.status = status;
     this.amount = amount;
     this.customerEmail = customerEmail;

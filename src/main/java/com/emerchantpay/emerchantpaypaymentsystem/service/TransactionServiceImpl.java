@@ -155,7 +155,7 @@ public class TransactionServiceImpl implements TransactionService {
     MerchantEntity merchant = referredTransaction.getMerchant();
 
     PaymentTransactionEntity transaction = new PaymentTransactionEntity(
-        PaymentTransactionType.CHARGE,
+        PaymentTransactionType.REFUND,
         refundAmount,
         PaymentTransactionStatus.APPROVED,
         customer.getEmail(),

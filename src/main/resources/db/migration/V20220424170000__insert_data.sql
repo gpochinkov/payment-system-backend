@@ -1,7 +1,7 @@
 INSERT INTO emerchantpay_user
 (`type`, username, password, email, is_account_non_expired, is_account_non_locked,
  is_credentials_non_expired, is_enabled, description, status, total_transaction_sum, phone, balance)
-VALUES ('CUSTOMER', 'johndoe', 'password123', 'johndoe@example.com', 1, 1, 1, 1,
+VALUES ('CUSTOMER', 'johndoe', '$2a$10$guKLOIMY0qKG3wld6p41NeIMoiAKdZCXvrnK6f6WtNKmF5CQPw61W', 'johndoe@example.com', 1, 1, 1, 1,
         'A customer account', NULL, 0.00, '+123456789', 1000.00);
 
 INSERT INTO emerchantpay_user

@@ -15,10 +15,8 @@ public interface PaymentTransactionRepository
 
   List<PaymentTransactionEntity> findAll();
 
+  @SuppressWarnings("unused")
   List<PaymentTransactionEntity> findByStatus(PaymentTransactionStatus status);
 
-    List<PaymentTransactionEntity> findAllByCreationTimeBefore(Instant cutoffTime);
-
-
-
+  List<PaymentTransactionEntity> findAllByCreationTimeBefore(Instant cutoffTime);
 }

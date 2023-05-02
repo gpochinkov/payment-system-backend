@@ -1,0 +1,53 @@
+ADMIN,thunderousdolphin,flowerpot456,thunderousdolphin@gmail.com,true,true,true,true
+ADMIN,sparklinglion,treehouse789,sparklinglion@gmail.com,true,true,true,true
+ADMIN,breezyotter,keyboard123,breezyotter@gmail.com,true,true,true,true
+ADMIN,funkyzebra,bookshelf234,funkyzebra@gmail.com,true,true,true,true
+ADMIN,sunnygiraffe,beachball567,sunnygiraffe@gmail.com,true,true,true,true
+ADMIN,playfulpenguin,cupcake890,playfulpenguin@gmail.com,true,true,true,true
+ADMIN,cozymoose,teapot123,cozymoose@gmail.com,true,true,true,true
+ADMIN,clevermonkey,smartphone456,clevermonkey@gmail.com,true,true,true,true
+ADMIN,braveeagle,mountain789,braveeagle@gmail.com,true,true,true,true
+ADMIN,curiousgiraffe,flowerpot234,curiousgiraffe@gmail.com,true,true,true,true
+ADMIN,happyraccoon,keyboard567,happyraccoon@gmail.com,true,true,true,true
+ADMIN,sleepybear,bookshelf890,sleepybear@gmail.com,true,true,true,true
+ADMIN,funnycat,beachball123,funnycat@gmail.com,true,true,true,true
+ADMIN,silentelephant,cupcake456,silentelephant@gmail.com,true,true,true,true
+ADMIN,adventurousfox,teapot789,adventurousfox@gmail.com,true,true,true,true
+ADMIN,cheerfulotter,smartphone234,cheerfulotter@gmail.com,true,true,true,true
+ADMIN,wiseowl,mountain567,wiseowl@gmail.com,true,true,true,true
+ADMIN,energeticzebra,flowerpot890,energeticzebra@gmail.com,true,true,true,true
+ADMIN,grumpyraccoon,keyboard123,grumpyraccoon@gmail.com,true,true,true,true
+ADMIN,jollymonkey,bookshelf456,jollymonkey@gmail.com,true,true,true,true
+MERCHANT,smartfashionista,shoebox123,smartfashionista@gmail.com,true,true,true,true,"Fashionable and affordable shoes",ACTIVE,2750.32
+MERCHANT,thriftyshopper,discount456,thriftyshopper@gmail.com,true,true,true,true,"Best deals and discounts",INACTIVE,0.00
+MERCHANT,ecofriendlygoods,recycle789,ecofriendlygoods@gmail.com,true,true,true,true,"Eco-friendly products",ACTIVE,438.75
+MERCHANT,techsavvytech,latesttech234,techsavvytech@gmail.com,true,true,true,true,"Cutting-edge technology products",ACTIVE,8910.25
+MERCHANT,sportinglife,sportsequipment567,sportinglife@gmail.com,true,true,true,true,"Quality sports equipment",ACTIVE,1298.99
+MERCHANT,organicgrocer,healthyfood890,organicgrocer@gmail.com,true,true,true,true,"Fresh and organic food",INACTIVE,0.00
+MERCHANT,beautyzone,cosmetics123,beautyzone@gmail.com,true,true,true,true,"Makeup and beauty products",ACTIVE,652.55
+MERCHANT,petparadise,petfood456,petparadise@gmail.com,true,true,true,true,"Healthy and nutritious pet food",ACTIVE,465.80
+MERCHANT,farmersmarket,freshproduce789,farmersmarket@gmail.com,true,true,true,true,"Farm-fresh produce",INACTIVE,0.00
+MERCHANT,wellnesshub,naturalremedies123,wellnesshub@gmail.com,true,true,true,true,"Natural remedies and wellness products",ACTIVE,1872.25
+MERCHANT,artisanshop,artisanalproducts456,artisanshop@gmail.com,true,true,true,true,"Unique artisanal products",INACTIVE,0.00
+MERCHANT,travelgear,travelsupplies789,travelgear@gmail.com,true,true,true,true,"Travel supplies and accessories",ACTIVE,1045.70
+MERCHANT,gourmettreats,deliciousfood234,gourmettreats@gmail.com,true,true,true,true,"Gourmet and delicious food",INACTIVE,0.00
+MERCHANT,kidszone,toysandgames567,kidszone@gmail.com,true,true,true,true,"Toys and games for kids",ACTIVE,326.90
+MERCHANT,homebakery,homemadebakedgoods890,homebakery@gmail.com,true,true,true,true,"Freshly baked goods",ACTIVE,135.25
+MERCHANT,designerthreads,highfashion123,designerthreads@gmail.com,true,true,true,true,"High-fashion clothing and accessories",INACTIVE,0.00
+CUSTOMER,johndoe,password123,johndoe@gmail.com,true,true,true,true,+1-123-456-7890,1000
+CUSTOMER,janedoe,password456,janedoe@gmail.com,true,true,true,true,+1-234-567-8901,500
+CUSTOMER,davidbrown,password789,davidbrown@gmail.com,true,true,true,true,+1-345-678-9012,2500
+CUSTOMER,sarahjones,passwordABC,sarahjones@gmail.com,true,true,true,true,+1-456-789-0123,750
+CUSTOMER,kevinlee,passwordDEF,kevinlee@gmail.com,true,true,true,true,+1-567-890-1234,1200
+CUSTOMER,lisawang,passwordGHI,lisawang@gmail.com,true,true,true,true,+1-678-901-2345,3000
+CUSTOMER,ericnguyen,passwordJKL,ericnguyen@gmail.com,true,true,true,true,+1-789-012-3456,600
+CUSTOMER,jennifertan,passwordMNO,jennifertan@gmail.com,true,true,true,true,+1-890-123-4567,900
+CUSTOMER,michaelkim,passwordPQR,michaelkim@gmail.com,true,true,true,true,+1-901-234-5678,1500
+CUSTOMER,amandalee,passwordSTU,amandalee@gmail.com,true,true,true,true,+1-012-345-6789,2000
+CUSTOMER,chrischoi,passwordVWX,chrischoi@gmail.com,true,true,true,true,+1-123-456-7890,800
+CUSTOMER,jasonlee,passwordYZA,jasonlee@gmail.com,true,true,true,true,+1-234-567-8901,400
+CUSTOMER,stephaniehuang,passwordBCD,stephaniehuang@gmail.com,true,true,true,true,+1-345-678-9012,2700
+CUSTOMER,alexjohnson,passwordEFG,alexjohnson@gmail.com,true,true,true,true,+1-456-789-0123,650
+CUSTOMER,sandralee,passwordHIJ,sandralee@gmail.com,true,true,true,true,+1-567-890-1234,1100
+CUSTOMER,dannynguyen,passwordKLM,dannynguyen@gmail.com,true,true,true,true,+1-678-901-2345,1700
+CUSTOMER,annawang,passwordNOP,annawang@gmail.com,true,true,true,true,+1-789-012-345

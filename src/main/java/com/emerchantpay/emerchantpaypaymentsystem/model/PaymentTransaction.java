@@ -1,7 +1,6 @@
 package com.emerchantpay.emerchantpaypaymentsystem.model;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
@@ -15,7 +14,7 @@ public class PaymentTransaction {
   @EqualsAndHashCode.Exclude
   private Long id;
 
-  private UUID uuid;
+  private String uuid;
   private PaymentTransactionType type;
   private BigDecimal amount;
   private PaymentTransactionStatus status;
@@ -27,7 +26,7 @@ public class PaymentTransaction {
   @NotBlank(message = "customerPhone must not be blank and must be valid phone")
   private String customerPhone;
 
-  private UUID reference;
+  private Long reference;
   private Long merchantId;
   private String merchantUserName;
 }

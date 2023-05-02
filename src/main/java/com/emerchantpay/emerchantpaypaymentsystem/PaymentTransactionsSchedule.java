@@ -1,12 +1,11 @@
 package com.emerchantpay.emerchantpaypaymentsystem;
 
 import java.time.Instant;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -20,34 +19,37 @@ import lombok.extern.slf4j.Slf4j;
 @EnableScheduling
 @RequiredArgsConstructor
 @Slf4j
+@Profile("scheduler")
 public class PaymentTransactionsSchedule {
 
-//  private final static Long ONE_HOUR_IN_MS = 1000 * 60 * 60L;
+  //  private final static Long ONE_HOUR_IN_MS = 1000 * 60 * 60L;
 
   private final PaymentTransactionRepository paymentTransactionRepository;
 
-
-  @Scheduled(fixedDelay = 3600000)
+  @SuppressWarnings("unused")
+  @Scheduled(fixedDelay = 3600000, initialDelay = 3600000)
   public void scheduleFixedDelayTask() {
 
-    Instant currentTime = Instant.now().minusMillis(30000);
+    Instant theTimeOneHourAgo = Instant.now().minusMillis(3600000);
 
     List<PaymentTransactionEntity> old = paymentTransactionRepository
-        .findAllByCreationTimeBefore(currentTime);
+        .findAllByCreationTimeBefore(theTimeOneHourAgo);
 
     List<PaymentTransactionEntity> sorted = old
         .stream()
         .sorted(Comparator.comparing(PaymentTransactionEntity::getCreationTime).reversed())
         .toList();
 
-    for (PaymentTransactionEntity entity : sorted) {
+    for (PaymentTransactionEntity trx : sorted) {
       try {
-        paymentTransactionRepository.deleteById(entity.getId());
+        paymentTransactionRepository.deleteById(trx.getId());
       } catch (DataIntegrityViolationException ignore) {
+        log.error(
+            "Transaction ID: {} cannot be deleted because it is referred by another transaction",
+            trx.getId());
       }
     }
     log.info(
-        "Transactions, older than 1 hour has been deleted (except the ones which has reference to"
-            + " them from transactions earlier than 1 hour)");
+        "Transactions, older than 1 hour has been deleted (except the ones which has been referenced");
   }
 }

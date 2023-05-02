@@ -18,7 +18,9 @@ public class TransactionMapper {
                              .status(paymentTransactionEntity.getStatus())
                              .customerEmail(paymentTransactionEntity.getCustomerEmail())
                              .customerPhone(paymentTransactionEntity.getCustomerPhone())
-                             .reference(paymentTransactionEntity.getReference().getUuid())
+                             .reference(paymentTransactionEntity.getReference() != null
+                                            ? paymentTransactionEntity.getReference().getId()
+                                            : null)
                              .merchantId(paymentTransactionEntity.getMerchant().getId())
                              .merchantUserName(paymentTransactionEntity.getMerchant().getUsername())
                              .build();

@@ -14,9 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.emerchantpay.emerchantpaypaymentsystem.model.Merchant;
 import com.emerchantpay.emerchantpaypaymentsystem.model.MerchantResponse;
 import com.emerchantpay.emerchantpaypaymentsystem.service.MerchantService;
-import com.emerchantpay.emerchantpaypaymentsystem.util.MerchantMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/ui")
@@ -24,25 +25,26 @@ public class MerchantsUIController {
 
   private final MerchantService merchantService;
 
+  @SuppressWarnings("unused")
   @GetMapping("/merchants")
   public MerchantResponse getMerchants() {
     return new MerchantResponse(merchantService.getMerchants());
   }
 
+  @SuppressWarnings("unused")
   @DeleteMapping("/merchants/{id}")
   public ResponseEntity<Void> deleteMerchant(@PathVariable Long id) {
     merchantService.deleteMerchant(id);
+
     return ResponseEntity.noContent().build();
   }
 
+  @SuppressWarnings("unused")
   @PutMapping("/merchants/{id}")
   ResponseEntity<Void> updateMerchant(@PathVariable Long id,
                                       @RequestBody @Valid Merchant merchant) {
-    merchantService.updateMerchant(id, MerchantMapper.merchantDtoToEntity(merchant));
+    merchantService.updateMerchant(id, merchant);
+
     return ResponseEntity.noContent().build();
   }
-
-
 }
-
-
